@@ -6,22 +6,22 @@ The script automates deployment notifications, making it easier to share setup d
 **_Features_**
   Collects deployment information including user details, installed software, shared drives, email accounts, printers, and sync status.
 	Structures data into a JSON payload for easy consumption by a webhook.
-	Sends the deployment summary to a specified webhook URL (e.g., Microsoft Teams channel).
+	Sends the deployment summary to a specified webhook URL (Microsoft Teams channel).
 	Provides error handling and user notifications for successful or failed requests.
 
 **Requirements**
 	PowerShell 5.1 or higher.
-	An active webhook URL (e.g., Microsoft Teams, Slack, or any service that accepts JSON payloads).
+	An active webhook URL (Microsoft Teams, Slack, or any service that accepts JSON payloads).
 	Network connectivity to send the HTTP POST request to the webhook.
 
 **Setup**
 	1.	Clone the repository or copy the script file to your local environment.
-	2.	Customize the Webhook URL: Replace the sample webhook URL in the script with your own webhook URL.
+	2.	Customize the Webhook URL: Replace the sample webhook URL in the script with your webhook URL.
 	3.	Verify the Variables: Ensure that all variables (e.g., $profile, $Name, $DefaultBrowser) are set up or populated in your PowerShell environment.
 
 **Script Breakdown**
 The script has the following main components:
-  Data Collection: Gathers information such as user profile, software list, shared drives, and email accounts.
+  Data Collection: Gathers information such as user profiles, software lists, shared drives, and email accounts.
   JSON Conversion: Structures the collected data into JSON format.
 	Webhook Integration: Sends the JSON payload via HTTP POST to the specified webhook URL.
 	Error Handling: Uses try-catch blocks to manage potential errors in sending data.
