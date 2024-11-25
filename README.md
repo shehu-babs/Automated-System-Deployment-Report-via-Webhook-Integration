@@ -35,5 +35,5 @@ The script has the following main components:
 	Variable Values: If a variable is missing or null, confirm that the expected values are set up in your PowerShell environment.
 	Network Issues: Ensure PowerShell has permission to make network requests, especially if running on a restricted system.
 
- **Acknowledgments **
+ Acknowledgments
 Special thanks to the Microsoft Teams and PowerShell communities for their documentation on webhook integration and automation scripts.
